@@ -1,0 +1,25 @@
+{
+  "name": "regen-assets",
+  "version": "1.0.0",
+  "description": "Regenerative Assets - Software company building tools for regenerative land management and economics",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "build:css": "tailwindcss -i ./src/css/styles.css -o ./src/css/tailwind.css --minify",
+    "build:site": "eleventy",
+    "dev": "npm run build:css && eleventy --serve",
+    "watch": "npm run build:css && eleventy --watch",
+    "debug": "DEBUG=* eleventy"
+  },
+  "keywords": ["11ty", "eleventy", "regenerative", "land-management", "holochain"],
+  "author": "Regenerative Assets",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "tailwindcss": "^3.3.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0"
+  },
+  "dependencies": {}
+} 

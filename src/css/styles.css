@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        font-family: 'Inter', system-ui, sans-serif;
+        @apply bg-aurora-bg text-aurora-text;
+    }
+}
+
+@layer components {
+    .section-padding {
+        @apply py-10 sm:py-16 md:py-24;
+    }
+    
+    .container-padding {
+        @apply px-2 sm:px-4 md:px-6 lg:px-8;
+    }
+    
+    .gradient-bg {
+        @apply bg-aurora-gradient;
+    }
+    
+    .card-hover {
+        @apply p-4 sm:p-6 md:p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-aurora-card border border-aurora-border rounded-2xl;
+    }
+    
+    .btn-primary {
+        @apply w-full sm:w-auto bg-aurora-purple-500 hover:bg-aurora-green-500 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 shadow-md;
+    }
+    
+    .btn-secondary {
+        @apply w-full sm:w-auto bg-transparent border border-aurora-green-500 text-aurora-green-400 hover:bg-aurora-green-500 hover:text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+    }
+    
+    .surface {
+        @apply bg-aurora-surface rounded-2xl border border-aurora-border;
+    }
+    
+    .aurora-gradient-text {
+        background: linear-gradient(120deg, #a78bfa 0%, #34d399 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}
+
+@layer utilities {
+    .text-gradient {
+        background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    .heading-responsive {
+        @apply text-2xl sm:text-3xl md:text-4xl font-bold;
+    }
+    .subheading-responsive {
+        @apply text-xl sm:text-2xl md:text-3xl font-semibold;
+    }
+    .icon-responsive {
+        @apply w-12 h-12 sm:w-16 sm:h-16 text-white;
+    }
+    .aurora-border {
+        @apply border-aurora-border;
+    }
+    .aurora-muted {
+        @apply text-aurora-muted;
+    }
+} 

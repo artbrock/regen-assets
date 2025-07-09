@@ -1,0 +1,21 @@
+name = "regen-assets"
+compatibility_date = "2023-12-01"
+
+[build]
+command = "npm run build"
+publish = "_site"
+
+[build.environment]
+NODE_VERSION = "18"
+
+[env.production]
+name = "regen-assets-prod"
+
+[env.staging]
+name = "regen-assets-staging"
+
+# R2 bucket configuration (if needed)
+# [[r2_buckets]]
+# binding = "ASSETS"
+# bucket_name = "regen-assets-assets"
+# preview_bucket_name = "regen-assets-assets-dev" 
