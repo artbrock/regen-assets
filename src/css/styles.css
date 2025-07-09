@@ -74,3 +74,10 @@
         @apply text-aurora-muted;
     }
 } 
+
+iframe:focus,
+iframe:focus-visible,
+iframe:active {
+  outline: none !important;
+  box-shadow: none !important;
+} 
