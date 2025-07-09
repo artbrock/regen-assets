@@ -19,7 +19,7 @@ A modern, responsive website for Regenerative Assets - a software company buildi
    - Real Assets Registry
    - Real Clear
    - Offline Remittance Transfers
-3. **Team**: Arthur Brock, David Meister, Joel Ulahanna, Norbu Snow
+3. **Team**: Arthur Brock, Joel Ulahanna, Ishan Shapiro, Norbu Snow
 4. **Contact**: Google Forms integration
 5. **Privacy Policy**: Clear statement about data protection
 
